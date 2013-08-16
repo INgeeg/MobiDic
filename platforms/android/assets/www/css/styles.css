@@ -201,3 +201,53 @@ li .action-icon {
     height: 100px;
     vertical-align: top;
 }
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+.header {
+	position:  absolute;
+ 	background: #666666; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666), color-stop(.6,#333));
+	color: #000000;
+	top: 0px; 
+	height: 35px;
+	width: 100%;
+	border-bottom: solid 1px #444444;	
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 40px 0 40px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+text-align: center;
+	
+}
+
+#leftcolumn{
+float: left;
+width: 40px; /*Width of left column in percentage*/
+margin-left: -100%;
+
+}
+
+#rightcolumn{
+float: left;
+width: 40px; /*Width of right column in pixels*/
+margin-left: -40px; /*Set margin to that of -(RightColumnWidth)*/
+text-align:right;
+
+}
+
+
+.innertube{
+margin: 4px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+.innertube h1{
+color: #FFFFFF;
+}
