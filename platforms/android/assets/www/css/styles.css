@@ -16,13 +16,10 @@ ul
 
 body {
 
-	width: : 100%;
+	width: 100%;
 	background: #DCDCDC;
 }
 
-h3 {
-	font-size: 16px;
-}
 
 ul {
 	clear: both;
@@ -41,20 +38,7 @@ li {
 	display:block;
 }
 
-li .list-icon {
-	float: left;
-	margin-right: 12px;
-	height: 75px; /* TODO: use 100x100 pics instead of scaling */ 
- }
 
-
-.icon-list li {
-	height: 80px;
-}
-
-.icon-list .line1 {
-	padding-top: 14px;
-}
 
 li a { 
 	text-decoration:none;
@@ -63,108 +47,11 @@ li a {
 }
 
 
-li .line1 {
-	font-size: 16px;
-	margin-top:0px;
-	margin-bottom:0px;
-	padding-top:10px;
-	padding-bottom:0px;
-	padding-left: 10px;
-	font-weight: bold;
-}
 
-li .line2 {
-	margin-top:4px;
-	margin-bottom:0px;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	color: #666666;
-}
+/*-------------------------------------------------------------------------------------------*/
 
-li .bubble {
-	clear:both;
-	position: absolute;
-	right: 12px;
-    background-color: #ECEFF2;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-	font-size:14px;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-left: 8px;
-	padding-right: 8px;
-	margin: 0px;
-	margin-top: -50px;
-	text-align: center;
-}
-
-li .action-icon {
-	position: absolute;
-	right: 12px;
-	margin-top: -50px;
-}
-
-.header {
-	position:  absolute;
- 	text-align: center;
- 	background: #666666; /* for non-css3 browsers */
-	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666), color-stop(.6,#333));
-	color: #FFFFFF;
-	top: 0px; 
-	height: 40px;
-	width: 100%;
-	border-bottom: solid 1px #444444;
-}
-
-.header > h1 {
-	font-size: 16px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-
-.header > .nav {
-	position: absolute;
-	left: 12px;
-	height:100%;
-	padding-top: 12px;
-	padding-right: 12px;
-	border-right: solid 1px #333333;
-}
-
-.header a { 
-	text-decoration:none;
-	color: #FFFFFF;
-}
-
-#header2 {
-	position: absolute;
-	padding-top: 10px;
-	padding-left: 8px;
-	background: #ECEFF2; /* for non-css3 browsers */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#ECEFF2));
-	color: #000000;
-	font-weight: bold;
-	top: 41px; 
-	height: 30px;
-	left: 0px;
-	right: 0px;
-	border-bottom: solid 1px #C8CBCE;
-	z-index:1;
-}
-
-#header2 > h2 {
-	font-size: 14px;
-	padding:0px;
-	margin:0px;
-}
 
 #wrapper {
-	position: absolute; 
-	top: 82px; 
-	bottom: 0px;
-	width: 100%;
 	overflow: auto;
 } 
 
@@ -189,22 +76,6 @@ li .action-icon {
     border-radius: 10px;
 	
 }
-
-#employeeDetails {
-	padding: 8px;
-	padding-bottom: 0px;
-}
-
-#employeeDetails img {
-	float: left;
-	margin-right: 8px;
-    height: 100px;
-    vertical-align: top;
-}
-
-
-/*-------------------------------------------------------------------------------------------*/
-
 .header {
 	position:  absolute;
  	background: #666666; /* for non-css3 browsers */
@@ -214,6 +85,7 @@ li .action-icon {
 	height: 35px;
 	width: 100%;
 	border-bottom: solid 1px #444444;	
+    
 }
 
 #contentwrapper{
@@ -250,4 +122,35 @@ margin-top: 0;
 
 .innertube h1{
 color: #FFFFFF;
+}
+
+
+/*content main -------------------------------*/
+
+#contentwrapper1{
+float: left;
+width: 100%;
+
+}
+
+#contentcolumn1{
+margin: 0 0% 0 40%; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+#leftcolumn1{
+float: left;
+width: 40%; /*Width of left column in percentage*/
+margin-left: -100%;
+background: #C8FC98;
+}
+
+#rightcolumn1{
+float: left;
+width: 0%; /*Width of right column in pixels*/
+margin-left: 0%; /*Set margin to that of -(RightColumnWidth)*/
+background: #DCDCDC;
+}
+
+#main {
+margin-top:40px;
 }
