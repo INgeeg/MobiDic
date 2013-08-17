@@ -1,4 +1,4 @@
-var db;
+﻿var db;
 var dbCreated = false;
 var ind = "";
 var v = "";
@@ -6,6 +6,17 @@ var v = "";
 var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar: false, hScroll: false });
 
 document.addEventListener("deviceready", onDeviceReady, false);
+
+$('#searchindex').keyup(function () {
+    ind = $(this).val();
+    db.transaction(getIndexes, transaction_error);
+});
+$('.bt').click(function () {
+    var t = $('#searchindex').val() + $(this).val();
+    $('#searchindex').val(t);
+    $('#searchindex').focus();
+});
+
 
 function onDeviceReady() {
     db = window.openDatabase("EmployeeDirectoryDB", "1.0", "PhoneGap Demo", 200000);
@@ -82,7 +93,7 @@ function populateDB(tx) {
 		"[Definition] VARCHAR(512))";
 	tx.executeSql(sql);
   
-	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('††∫†º','asdsad')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");

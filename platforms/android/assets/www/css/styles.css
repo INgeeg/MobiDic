@@ -29,11 +29,6 @@ ul {
 
 li {
 	clear: both;
-	padding-top: 4px;
-	padding-bottom: 0px;
-	padding-left: 4px;
-	padding-right: 0px;
-	margin-left: 0px;
 	border-bottom:solid 1px #CCCCCC;
 	display:block;
 }
@@ -176,4 +171,19 @@ padding: 10px;
 #searchindex{
 	height: 30px;
 	margin: 0px 5px 5px 5px;
+}
+
+#definitionList{
+background: #DEFFF9;
+}
+
+a.click-word:hover {
+  background-color:#5788af;
+  text-decoration:none;
+	display: block;
+      color:#fcffdf;
+      height: 35px;
+}
+#employeeList li{
+    height: 35px;
 }
