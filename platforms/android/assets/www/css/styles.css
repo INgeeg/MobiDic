@@ -154,3 +154,26 @@ background: #DCDCDC;
 #main {
 margin-top:40px;
 }
+
+#definitionList li{
+word-wrap: break-word;
+padding: 10px;
+}
+
+#kg-char{
+  width: 100%; 
+  height: 45px; 
+  border: 0px solid; 
+  text-align:center;
+}
+.bt {
+    color: #DE5F66;
+    font-size: 12pt;
+	width: 40px; 
+   height: 40px;
+}
+
+#searchindex{
+	height: 30px;
+	margin: 0px 5px 5px 5px;
+}

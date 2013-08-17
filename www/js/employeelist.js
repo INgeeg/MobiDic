@@ -3,7 +3,7 @@ var dbCreated = false;
 var ind = "";
 var v = "";
 
-var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
+var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar: false, hScroll: false });
 
 document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -66,6 +66,7 @@ function getIndexes_success(tx, results) {
 function getDefinitions_success(tx, results) {
     $('#busy').hide();
     var word = results.rows.item(0);
+    
     $('#definitionList').html('<li>' + word.Definition + '</li>');
 }
 
@@ -81,6 +82,54 @@ function populateDB(tx) {
 		"[Definition] VARCHAR(512))";
 	tx.executeSql(sql);
   
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bear','Wasdasdasells')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('kaka','wererwerwer')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('makaa','werwerwfds')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('saka','sdfsdgre')");
+	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('slon','werwrwegdfg')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('cat','asdsad')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('dog','asdsadssa')");
 	tx.executeSql("INSERT INTO words (Word,[Definition]) VALUES ('bird','asdasdsad')");
