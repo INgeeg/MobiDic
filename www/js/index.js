@@ -58,6 +58,18 @@ function onError(transaction, error) {
     console.log('Query failed: ' + error.message);
 }
 $(document).on('pageinit',function() {
+               var dom = {};
+               dom.key = $("#searchtam");
+               dom.tam= $(".tam");
+               
+               dom.key.on("change",function(){
+                          
+                          });
+               
+               dom.tam.on("click",function(){
+                          var t = $(this);
+                          dom.key.val(dom.key.val()+t.text());
+                          });
                var dbSize = 5 * 1024 * 1024; // 5MB
                
                var db = openDatabase("Todo", "", "Todo manager", dbSize, function() {
